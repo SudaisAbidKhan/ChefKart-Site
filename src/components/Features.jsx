@@ -75,7 +75,7 @@ export default function Features() {
               className={`group relative ${f.bg} border ${f.border} rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300`}
             >
               {/* Icon */}
-              <div className={`w-14 h-14 bg-gradient-to-br ${f.color} rounded-2xl flex items-center justify-center text-2xl shadow-lg mb-6`}>
+              <div className={`w-14 h-14 bg-linear-to-br ${f.color} rounded-2xl flex items-center justify-center text-2xl shadow-lg mb-6`}>
                 {f.icon}
               </div>
 

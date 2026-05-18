@@ -2,7 +2,7 @@ const DRIVE_APK_LINK = 'https://drive.google.com/uc?export=download&id=YOUR_FILE
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-orange-600 via-orange-500 to-amber-400 overflow-hidden flex items-center">
+    <section className="relative min-h-screen bg-linear-to-br from-orange-600 via-orange-500 to-amber-400 overflow-hidden flex items-center">
       {/* Background decorative circles */}
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
       <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-orange-800/20 rounded-full blur-3xl" />
@@ -122,7 +122,7 @@ export default function Hero() {
                     <p className="text-gray-800 text-xs font-black mb-2">Popular Cuisines</p>
                     <div className="flex gap-2 overflow-hidden">
                       {['🍛 Pakistani', '🍝 Italian', '🍖 BBQ', '🌮 Cont.'].map(c => (
-                        <div key={c} className="flex-shrink-0 bg-orange-50 border border-orange-100 rounded-xl px-2 py-1.5 text-center">
+                        <div key={c} className="shrink-0 bg-orange-50 border border-orange-100 rounded-xl px-2 py-1.5 text-center">
                           <span className="text-[9px] font-bold text-gray-700">{c}</span>
                         </div>
                       ))}

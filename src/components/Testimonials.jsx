@@ -121,7 +121,7 @@ export default function Testimonials() {
             { value: '4.8 / 5', label: 'Average Rating' },
             { value: '50+', label: 'Cuisine Types' },
           ].map(stat => (
-            <div key={stat.label} className="bg-gradient-to-br from-orange-500 to-amber-400 rounded-3xl p-8 text-center text-white">
+            <div key={stat.label} className="bg-linear-to-br from-orange-500 to-amber-400 rounded-3xl p-8 text-center text-white">
               <div className="text-4xl font-black mb-1">{stat.value}</div>
               <div className="text-orange-100 text-sm font-medium">{stat.label}</div>
             </div>
