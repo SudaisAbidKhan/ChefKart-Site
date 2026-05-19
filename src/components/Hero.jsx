@@ -88,7 +88,7 @@ export default function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href={"https://drive.google.com/uc?export=download&id=1qZVSBlNSGihSghpFF2ZZq4FQwBmQNEr1"}
+                href="https://drive.google.com/uc?export=download&id=1qZVSBlNSGihSghpFF2ZZq4FQwBmQNEr1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center justify-center gap-3 bg-white text-orange-600 font-black text-lg px-8 py-4 rounded-2xl shadow-2xl hover:scale-105 active:scale-95 transition-all duration-200"
