@@ -1,9 +1,17 @@
+import screen1 from "../appScreenshots/1.jpeg";
+import screen2 from "../appScreenshots/2.jpeg";
+import screen3 from "../appScreenshots/3.jpeg";
+import screen4 from "../appScreenshots/4.jpeg";
+import screen5 from "../appScreenshots/5.jpeg";
+import screen6 from "../appScreenshots/6.jpeg";
+
 const screens = [
   {
     title: "Smart Chef Discovery",
     desc: "Browse verified chefs near you with detailed profiles, cuisine specialties, ratings, and live availability.",
     color: "from-orange-400 to-orange-600",
     emoji: "🔍",
+    image: screen1,
     items: [
       "Chef Ayesha Khan ⭐4.8",
       "Chef Usman Ali ⭐4.7",
@@ -15,6 +23,7 @@ const screens = [
     desc: "Receive personalized chef suggestions powered by AI that learns your taste, history, and location.",
     color: "from-purple-500 to-indigo-600",
     emoji: "🤖",
+    image: screen2,
     items: ["Based on your taste", "Nearby & available", "Highest rated match"],
   },
   {
@@ -22,6 +31,7 @@ const screens = [
     desc: "Propose your budget, receive counter-offers, and agree on the perfect price — all inside the app.",
     color: "from-green-400 to-teal-600",
     emoji: "💬",
+    image: screen3,
     items: [
       "You offered: Rs. 1,200",
       "Chef counter: Rs. 1,400",
@@ -33,6 +43,7 @@ const screens = [
     desc: "Track all your active, upcoming, and completed bookings from one clean dashboard.",
     color: "from-blue-400 to-blue-600",
     emoji: "📅",
+    image: screen4,
     items: [
       "Active booking: Today 2PM",
       "Upcoming: Saturday 7PM",
@@ -44,6 +55,7 @@ const screens = [
     desc: "Pay safely through local payment gateways. Funds are held until your session is completed.",
     color: "from-teal-400 to-cyan-600",
     emoji: "💳",
+    image: screen5,
     items: ["JazzCash / EasyPaisa", "Card payment", "Transaction receipt"],
   },
   {
@@ -51,6 +63,7 @@ const screens = [
     desc: "After every session, rate your chef and share feedback that helps the whole community.",
     color: "from-yellow-400 to-orange-500",
     emoji: "⭐",
+    image: screen6,
     items: ["Rate your experience", "Write a review", "Public chef ratings"],
   },
 ];
@@ -59,31 +72,13 @@ function MockScreen({ screen }) {
   return (
     <div className="bg-gray-900 rounded-[2rem] p-2.5 shadow-2xl w-52 mx-auto">
       <div className="bg-white rounded-[1.5rem] overflow-hidden">
-        {/* Header */}
-        <div className={`bg-linear-to-br ${screen.color} p-4 pb-6`}>
-          <div className="flex justify-between text-white text-[10px] font-bold mb-3 opacity-80">
-            <span>9:41</span>
-            <span>●●▲</span>
-          </div>
-          <div className="text-3xl mb-1">{screen.emoji}</div>
-          <h4 className="text-white font-black text-sm leading-tight">
-            {screen.title}
-          </h4>
-        </div>
-
-        {/* Content */}
-        <div className="p-3 space-y-2">
-          {screen.items.map((item, i) => (
-            <div
-              key={i}
-              className="bg-gray-50 rounded-xl px-3 py-2 flex items-center gap-2"
-            >
-              <div className="w-1.5 h-1.5 rounded-full bg-orange-400 shrink-0" />
-              <span className="text-[10px] font-semibold text-gray-700">
-                {item}
-              </span>
-            </div>
-          ))}
+        {/* Image */}
+        <div className="relative w-full bg-gray-200">
+          <img
+            src={screen.image}
+            alt={screen.title}
+            className="w-full h-auto object-cover"
+          />
         </div>
 
         {/* Bottom nav */}
