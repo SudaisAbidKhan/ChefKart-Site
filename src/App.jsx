@@ -5,8 +5,8 @@ import HowItWorks from './components/HowItWorks'
 import UserTypes from './components/UserTypes'
 import AppScreenshots from './components/AppScreenshots'
 import Testimonials from './components/Testimonials'
-// import DownloadCTA from './components/DownloadCTA'
-// import Footer from './components/Footer'
+import DownloadCTA from './components/DownloadCTA'
+import Footer from './components/Footer'
 
 export default function App() {
   return (
@@ -18,8 +18,8 @@ export default function App() {
       <UserTypes />
       <AppScreenshots />
       <Testimonials />
-      {/* <DownloadCTA />
-      <Footer /> */}
+      <DownloadCTA />
+      <Footer />
     </div>
   )
 }

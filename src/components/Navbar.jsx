@@ -43,7 +43,7 @@ export default function Navbar() {
           <img src={logo} alt="ChefKart Logo" className="w-10 h-10 object-contain" />
           <div>
             <span className={`text-xl font-black tracking-tight ${scrolled ? 'text-gray-900' : 'text-white'}`}>
-              CHEF <span className="text-orange-500">KART</span>
+              CHEF <span className={`${scrolled ? 'text-orange-500' : 'text-black'} `}>KART</span>
             </span>
             <p className={`text-[10px] font-medium tracking-widest uppercase leading-none ${scrolled ? 'text-gray-400' : 'text-orange-200'}`}>
               Cooking Company
