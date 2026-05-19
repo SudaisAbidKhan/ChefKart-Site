@@ -4,6 +4,14 @@ const DRIVE_APK_LINK =
   "https://drive.google.com/uc?export=download&id=1qZVSBlNSGihSghpFF2ZZq4FQwBmQNEr1";
 
 export default function Hero() {
+  const handleDownload = () => {
+    // Add &confirm=t to bypass Google Drive preview on mobile
+    console.log("clicked");
+    const url =
+      "https://drive.google.com/uc?export=download&id=1qZVSBlNSGihSghpFF2ZZq4FQwBmQNEr1&confirm=t";
+    window.location.href = url;
+  };
+
   return (
     <section className="relative min-h-screen bg-linear-to-br from-orange-600 via-orange-500 to-amber-400 overflow-hidden flex items-center">
       {/* Background decorative circles */}
@@ -51,7 +59,7 @@ export default function Hero() {
 
             {/* Headline */}
             <div>
-              <h1 className="text-5xl lg:text-7xl font-black leading-none tracking-tight">
+              <h1 className="text-3xl sm:text-5xl lg:text-7xl font-black leading-none tracking-tight">
                 Book a
                 <br />
                 <span className="text-white drop-shadow-lg">Home Chef</span>
@@ -60,7 +68,7 @@ export default function Hero() {
                   Instantly
                 </span>
               </h1>
-              <p className="mt-6 text-lg lg:text-xl text-orange-100 font-medium leading-relaxed max-w-lg">
+              <p className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-orange-100 font-medium leading-relaxed max-w-lg">
                 Connect with verified professional home chefs. Get personalized,
                 hygienic, and delicious home-cooked meals delivered to your
                 doorstep — on your schedule.
@@ -68,17 +76,17 @@ export default function Hero() {
             </div>
 
             {/* Stats */}
-            <div className="flex gap-8">
+            <div className="flex flex-wrap gap-4 sm:gap-8">
               {[
                 { value: "500+", label: "Verified Chefs" },
                 { value: "4.8★", label: "Avg Rating" },
                 { value: "10K+", label: "Happy Customers" },
               ].map((stat) => (
                 <div key={stat.label}>
-                  <div className="text-3xl font-black text-white">
+                  <div className="text-2xl sm:text-3xl font-black text-white">
                     {stat.value}
                   </div>
-                  <div className="text-sm text-orange-200 font-medium">
+                  <div className="text-xs sm:text-sm text-orange-200 font-medium">
                     {stat.label}
                   </div>
                 </div>
@@ -87,28 +95,14 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://drive.google.com/uc?export=download&id=1qZVSBlNSGihSghpFF2ZZq4FQwBmQNEr1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center justify-center gap-3 bg-white text-orange-600 font-black text-lg px-8 py-4 rounded-2xl shadow-2xl hover:scale-105 active:scale-95 transition-all duration-200"
-              >
-                <svg
-                  className="w-6 h-6"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.4c1.39.07 2.36.74 3.18.8 1.21-.24 2.37-.94 3.67-.84 1.57.12 2.75.72 3.53 1.84-3.25 1.97-2.7 6.29.62 7.5-.58 1.56-1.35 3.1-3 3.58zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                </svg>
-                Download APK
-              </a>
+              
               <a
                 href="#howitworks"
-                className="flex items-center justify-center gap-2 border-2 border-white/50 text-white font-bold text-lg px-8 py-4 rounded-2xl hover:bg-white/10 transition-all duration-200"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 border-2 border-white/50 text-white font-bold text-sm sm:text-lg px-4 sm:px-8 py-2.5 sm:py-4 rounded-2xl hover:bg-white/10 transition-all duration-200"
               >
                 See How It Works
                 <svg
-                  className="w-5 h-5"
+                  className="w-4 h-4 sm:w-5 sm:h-5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
