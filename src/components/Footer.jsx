@@ -171,7 +171,7 @@ export default function Footer() {
             </p>
           </div>
           <a
-            href={DRIVE_APK_LINK}
+            href="https://drive.google.com/uc?export=download&id=1qZVSBlNSGihSghpFF2ZZq4FQwBmQNEr1"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-shrink-0 flex items-center gap-3 bg-white text-orange-600 font-black px-8 py-4 rounded-2xl shadow-xl hover:scale-105 active:scale-95 transition-all duration-200 whitespace-nowrap"

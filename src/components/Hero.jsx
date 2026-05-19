@@ -1,7 +1,7 @@
 import appScreenshot from "../appScreenshots/2.jpeg";
 
 const DRIVE_APK_LINK =
-  "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID";
+  "https://drive.google.com/uc?export=download&id=1qZVSBlNSGihSghpFF2ZZq4FQwBmQNEr1";
 
 export default function Hero() {
   return (

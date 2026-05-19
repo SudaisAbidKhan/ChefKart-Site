@@ -1,4 +1,4 @@
-const DRIVE_APK_LINK = 'https://drive.google.com/uc?export=download&id=YOUR_FILE_ID'
+const DRIVE_APK_LINK = "https://drive.google.com/uc?export=download&id=1qZVSBlNSGihSghpFF2ZZq4FQwBmQNEr1"
 
 const features = [
   { icon: '🛡️', text: 'Verified & Safe Chefs' },

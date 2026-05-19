@@ -7,7 +7,7 @@ import screen6 from "../appScreenshots/6.jpeg";
 
 const screens = [
   {
-    title: "Smart Chef Discovery",
+    title: "Customer Location",
     desc: "Browse verified chefs near you with detailed profiles, cuisine specialties, ratings, and live availability.",
     color: "from-orange-400 to-orange-600",
     emoji: "🔍",
@@ -19,16 +19,16 @@ const screens = [
     ],
   },
   {
-    title: "AI Recommendations",
-    desc: "Receive personalized chef suggestions powered by AI that learns your taste, history, and location.",
+    title: "Login",
+    desc: "Sign in securely with your email and password to access your personalized dashboard and saved preferences.",
     color: "from-purple-500 to-indigo-600",
     emoji: "🤖",
     image: screen2,
     items: ["Based on your taste", "Nearby & available", "Highest rated match"],
   },
   {
-    title: "Price Negotiation",
-    desc: "Propose your budget, receive counter-offers, and agree on the perfect price — all inside the app.",
+    title: "Sign Up",
+    desc: "Create your account in seconds. Set up your profile, preferences, and location to start discovering amazing chefs.",
     color: "from-green-400 to-teal-600",
     emoji: "💬",
     image: screen3,
@@ -39,8 +39,8 @@ const screens = [
     ],
   },
   {
-    title: "Booking Management",
-    desc: "Track all your active, upcoming, and completed bookings from one clean dashboard.",
+    title: "Price Negotiation",
+    desc: "Propose your budget, receive counter-offers, and agree on the perfect price — all inside the app.",
     color: "from-blue-400 to-blue-600",
     emoji: "📅",
     image: screen4,
